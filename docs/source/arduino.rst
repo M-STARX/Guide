@@ -1,7 +1,12 @@
-API
-===
+Arduino
+=======
 
-.. autosummary::
-   :toctree: generated
+We use Arduino as our starting point to learn to use new components given Arduino's 
+simplicity and easy use. 
 
-   lumache
+.. _installation:
+
+Installation
+------------
+
+

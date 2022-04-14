@@ -1,34 +1,29 @@
 Raspberry Pi
-=====
+============
 
-.. _installation:
+.. _flashing:
 
-Installation
+OS Flashing
 ------------
 
-To use Lumache, first install it using pip:
+Raspberry Pi released an imaging tool which simplifies the process of flashing an OS into 
+a micro SD card. If you do not have a micro SD card reader then use an adapter.:
 
-.. code-block:: console
+.. tabs::
 
-   (.venv) $ pip install lumache
+   .. tab:: Windows
+      
+      #. Download RPi Imager
 
-Creating recipes
+      Go to the following link blah blah
+   
+.. _installation:
+
+Installing Tools
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+At STARX we use use a variety of tools this inclues ROS, odrive, SPI, GPIO, Git, and more
+In the following lines we will be installing these tools so that the raspberry pi is ready
+to be used to test and work on anything related to STARX
 
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
 
