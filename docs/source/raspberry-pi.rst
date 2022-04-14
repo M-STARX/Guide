@@ -1,4 +1,4 @@
-Usage
+Raspberry Pi
 =====
 
 .. _installation:

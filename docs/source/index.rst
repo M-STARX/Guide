@@ -22,4 +22,3 @@ Contents
    usage
    api
    raspberry-pi
-   test
