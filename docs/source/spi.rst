@@ -32,10 +32,16 @@ To enable SPI mode
 
 .. tabs::
    .. tab:: Raspbian
-      .. code:: Bash
-         pip install --upgrade odrive
+      
+      #. Enable SPI library
+         
+         This is me testing the different parts of RST
+         .. code:: Bash
+            pip install --upgrade odrive
 
-      .. code-block:: Bash
-         pip install --this is different
+         .. code-block:: Bash
+            pip install --this is different
 
    .. tab:: Ubuntu
+
+      #. Enable SPI library
