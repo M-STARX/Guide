@@ -1,9 +1,7 @@
-Template for the Read the Docs tutorial
+Read the Docs STARX
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This is a test to see if Read the Doc will be a better way to delivere training for new
+members
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+http://starx.readthedocs.io/

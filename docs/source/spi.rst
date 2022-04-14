@@ -20,46 +20,46 @@ Installation
   
       #. To install we need to update the package information for all available sources
 
-      .. code-block:: Bash
+         .. code-block:: Bash
    
-         sudo apt update
+            sudo apt update
 
       #. This will install pip3 and the python3 developer tools
 
-      .. code-block:: Bash
+         .. code-block:: Bash
 
-         sudo apt install python3-pip python3-dev
+            sudo apt install python3-pip python3-dev
 
       #. Instal spidev library
 
-      .. code-block:: Bash   
+         .. code-block:: Bash   
       
-         pip3 install spidev
+            pip3 install spidev
 
       #. Test that the install was succesful by running the following on the terminal
 
-      .. code-block:: Bash
+         .. code-block:: Bash
 
-         python3
+            python3
 
-         import spidev
+            >>> import spidev
 
 
    .. tab:: C++
 
-   For C++ we have aquired our own libraries
+      For C++ we have aquired our own libraries
 
-   #. Clone our SPI library repository
+      #. Clone our SPI library repository
 
-   .. code-block:: Bash
+         .. code-block:: Bash
 
-      git clone https://gitlab.eecs.umich.edu/starx/spi.git
+            git clone https://gitlab.eecs.umich.edu/starx/spi.git
 
-   #. Import the library into the C++ file
+      #. Import the library into the C++ file
 
-   .. code-block:: Bash
+         .. code-block:: Bash
 
-      #include "library-name.h"
+            #include "library-name.h"
 
 .. _enable:
 
