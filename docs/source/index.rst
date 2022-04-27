@@ -5,7 +5,7 @@ Welcome to STARX's documentation!
 team at the Univeristy of Michigan focused on making practical powered exoskeletons.
 `STARX's Website' <https://sites.google.com/a/umich.edu/engin-starx/home/>`_. 
 You can also find our exoskeleton in action 
-`Youtube <https://www.youtube.com/watch?v=eBGIQ7ZuuiU>`_... toctree::
+`Youtube <https://www.youtube.com/watch?v=eBGIQ7ZuuiU>`_.
 
 .. Check out the :doc:`usage` section for further information, including
 .. how to :ref:`installation` the project.
