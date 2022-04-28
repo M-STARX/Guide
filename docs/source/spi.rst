@@ -57,7 +57,7 @@ Installation
 
       #. Import the library into the C++ file
 
-         .. code-block:: Bash
+         .. code-block:: C++
 
             #include "library-name.h"
 

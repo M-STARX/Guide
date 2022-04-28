@@ -17,7 +17,7 @@ Follow the following instruction to install Arduino to your laptop / PC
    
       #. Download Arduino
                
-         Go to the following `link <https://www.arduino.cc/en/software`_
+         Go to the following `link <https://www.arduino.cc/en/software>`_
 
       #. Run Installer
 
@@ -83,12 +83,15 @@ The answers tab is provided to so that you can see a working version of the to-d
 
 This is just a test to checkout this code
 
-.. raw:: html
+.. raw:: HTML
+   
    <details>
    <summary><a>big code</a></summary>
 
-.. code-block:: python
+.. code-block:: Bash
+   
    lots_of_code = "this text block"
 
-.. raw:: html
+.. raw:: HTML
+   
    </details>
