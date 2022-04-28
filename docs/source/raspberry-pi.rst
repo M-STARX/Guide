@@ -19,7 +19,7 @@ a micro SD card. If you do not have a micro SD card reader then use an adapter.
 
       #. Run Installer
 
-         Click on downloaded exe file
+         Click the .exe file
 
    .. tab:: Linux
 
@@ -47,7 +47,5 @@ Use the following lines and follow the installation instructions for the tool th
 that the raspberry pi is ready to be used to test and work on anything related to STARX.
 
 .. toctree::
-   ROS
-   SPI
-   GPIO
-   Git
+   spi
+   gpio
