@@ -49,3 +49,109 @@ that the raspberry pi is ready to be used to test and work on anything related t
 .. toctree::
    spi
    gpio
+
+
+.. _headless:
+
+Headless
+--------
+
+This requires 3 different devices: hotspot, raspberry pi, and laptop
+
+**Hotspot**
+
+.. tabs::
+
+   .. tab:: Apple
+
+      #. Settings > About
+
+         Name: starx
+
+      #. Settigs > About > Personal Hotspot
+
+         Password: joyride67
+
+      #. Enable hotspot
+
+   .. tab:: Android
+
+      #. Settings > Connections > Mobile Hotspot and Tethering > Mobile Hotspot
+
+      #. Set the following values
+
+         Network name: starx
+         Password: joyride67
+
+      #. Enable hotspot
+
+**Raspberry Pi**
+
+.. tabs::
+
+   .. tab:: Option 1
+
+      #. Flash custom starx ubuntu image
+
+   .. tab:: Option 2
+
+      #. Run the following commands to install necessary application
+
+         .. code-block:: Bash
+
+            sudo apt install openssh-server
+
+      #. The following commands checks the status of the ssh service
+
+         .. code-block:: Bash
+
+            sudo systemctl status ssh
+
+      #. Ubuntu uses ufw to control firewall permission, we must allow ssh connections
+
+         .. code-block:: Bash
+
+            sudo ufw allow ssh
+
+      #. Connect to starx wifi so that it creates the wifi profile and automatically connects
+
+
+**Latop**
+
+.. note:: 
+
+   Both devices (laptop and raspberry pi must be connected to the same wifi in this case the custom hotspot we setup.
+
+.. tabs::
+
+   .. tab:: VM Ubuntu
+
+      Network Adapter: Bridged Adapter
+
+
+.. code-block:: Bash
+
+   sudo apt install net-tools
+   sudo apt install nmap
+
+We wil use two commands to discover the raspberry pi's IP as it it dynamically assigned
+
+The following will print the gateway's IP address
+.. code-block:: Bash
+
+   arp -a
+
+   Example Output: 192.168.20.53
+
+We will use this IP to do a wifi scan, this will find every device connected to this wifi
+
+.. code-block:: Bash
+
+   nmap -sP <gateway's ip (first 3 values)>.1/24
+
+   Example Input: nmap -sP 192.168.20.1/24
+
+This should take a couple of seconds and should print three different IP's: gateway, laptop, and raspberry pi
+
+Use the raspberry pi IP to ssh into the pi.
+            
