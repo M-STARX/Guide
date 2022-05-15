@@ -78,9 +78,8 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
       #. Settings > Connections > Mobile Hotspot and Tethering > Mobile Hotspot
 
-      #. Set the following values
-
          Network name: starx
+
          Password: joyride67
 
       #. Enable hotspot
@@ -118,16 +117,9 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
 **Latop**
 
-.. note:: 
+.. note::
 
-   Both devices (laptop and raspberry pi must be connected to the same wifi in this case the custom hotspot we setup.
-
-.. tabs::
-
-   .. tab:: VM Ubuntu
-
-      Network Adapter: Bridged Adapter
-
+   The following will work for both Ubuntu and VM Ubuntu. VM Ubuntu MUST have the Network Adapter to Bridged Adapter
 
 .. code-block:: Bash
 
@@ -137,6 +129,7 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 We wil use two commands to discover the raspberry pi's IP as it it dynamically assigned
 
 The following will print the gateway's IP address
+
 .. code-block:: Bash
 
    arp -a
@@ -154,4 +147,7 @@ We will use this IP to do a wifi scan, this will find every device connected to 
 This should take a couple of seconds and should print three different IP's: gateway, laptop, and raspberry pi
 
 Use the raspberry pi IP to ssh into the pi.
-            
+
+.. note:: 
+
+    Both devices must be connected to the same wifi, in this case the custom hotspot we setup
