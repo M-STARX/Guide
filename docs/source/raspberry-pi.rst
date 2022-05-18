@@ -46,11 +46,6 @@ At STARX we use use a variety of tools this inclues ROS, odrive, SPI, GPIO, Git,
 Use the following lines and follow the installation instructions for the tool that you will be using so 
 that the raspberry pi is ready to be used to test and work on anything related to STARX.
 
-.. toctree::
-   spi
-   gpio
-
-
 .. _headless:
 
 Headless
@@ -131,7 +126,7 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
 .. note::
 
-   The following will work for both Ubuntu and VM Ubuntu. VM Ubuntu MUST have the Network Adapter to Bridged Adapter
+   The following will work for both Ubuntu and VM Ubuntu. VM Ubuntu MUST have the Network Adapter set to "Bridged Adapter"
 
 .. code-block:: Bash
 
