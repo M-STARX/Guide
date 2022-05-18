@@ -90,7 +90,19 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
    .. tab:: Option 1
 
+      #. Google Drive > STARX > PROGRAMMING Team 
+               
+         Download the custom STARX Ubuntu image: starx_ubuntu.img.zip
+               
+      #. Unzip image
+               
+         .. code-block:: Bash
+   
+            unzip starx_ubuntu.img.zip
+
       #. Flash custom starx ubuntu image
+
+         Open the Raspberry Pi Imager > CHOOSE OS > Use custom
 
    .. tab:: Option 2
 
@@ -148,6 +160,7 @@ This should take a couple of seconds and should print three different IP's: gate
 
 Use the raspberry pi IP to ssh into the pi.
 
-.. note:: 
+.. code-block:: Bash
 
-    Both devices must be connected to the same wifi, in this case the custom hotspot we setup
+   ssh starx@raspi-IP
+
