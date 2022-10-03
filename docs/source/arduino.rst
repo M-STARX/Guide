@@ -4,6 +4,24 @@ Arduino
 We use Arduino as our starting point to learn to use new components given Arduino's 
 simplicity and easy use. 
 
+Below is the pinout on the right side of an arduino. As mentioned in the SPI section there are specific pins that you will require to use the SPI communication. 
+
+You do not need to memorize this diagram!! 
+
+.. _arduino_digital:
+
+.. image:: assets/arduino_uno_digital_pinout.png
+   :width: 400 
+
+Bellow is the pinout on the left side of an arduino
+
+You do not need to memorize this diagram either!!
+
+.. _arduino_analog:
+
+.. image:: assets/arduino_uno_analog_pinout.png
+   :width: 400
+
 .. _installation:
 
 Installation
@@ -58,6 +76,7 @@ The answers tab is provided to so that you can see a working version of the to-d
    .. tab:: To-Do
 
       [ ] Turn on the onboard LED
+      
       [ ] Blink the onboard LED on and off with a 2 second period and a 50% duty cycle
 
 

@@ -1,7 +1,4 @@
-API
-===
+GPIO
+====
 
-.. autosummary::
-   :toctree: generated
-
-   lumache
+Please see the arduino digital :ref:`arduino_digital`
