@@ -11,13 +11,14 @@ SPI is a communication protocol, it allows devices to communicate in a full-dupl
 
 .. image:: assets/spi_three_slaves.png
    :width: 400
+   :align: center
 
-It is possible that the pins get labeled with different but similar names
+It is possible that the pins get labeled with different but similar names:
 
-SCLK = Serial Clock
-MOSI = Master Out Slave In
-MISO = Master In Slave Out
-SS# = Slave Select 
+* SCLK = Serial Clock
+* MOSI = Master Out Slave In
+* MISO = Master In Slave Out
+* SS# = Slave Select 
 
 It is not important that you know the following but make sure that you are using the proper mode for the component that you will be using. 
 
@@ -41,7 +42,7 @@ Library Installation and Usage
 
 .. tabs::
    
-   .. tab:: Python (Ubuntu)
+   .. tab:: Python (Linux)
   
       #. To install we need to update the package information for all available sources
 
@@ -53,13 +54,13 @@ Library Installation and Usage
 
          .. code-block:: Bash
 
-            $ sudo apt install python3-pip python3-dev
+            $ sudo apt install python3-pip python3-dev -y
 
       #. Instal spidev library
 
          .. code-block:: Bash   
       
-            $ pip3 install spidev
+            $ pip3 install spidev -y
 
       #. Test that the install was succesful by running the following on the terminal
 
@@ -102,14 +103,9 @@ Library Installation and Usage
 Enabling
 --------
 
-Some devices require you to enable SPI mode. To enable SPI mode 
+Some devices (Arduino does not) require you to enable SPI mode. To enable SPI mode: 
 
 .. tabs::
-   
-
-   .. tab:: Arduino
-      
-      #. none
 
    .. tab:: Raspbian
       
@@ -129,6 +125,3 @@ Some devices require you to enable SPI mode. To enable SPI mode
 
       #. Reboot
 
-   .. tab:: Ubuntu
-
-      #. no idea

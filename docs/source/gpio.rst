@@ -1,4 +1,4 @@
 GPIO
 ====
 
-Please see the arduino digital :ref:`arduino_digital`
+Please see the arduino digital :ref:`arduino`

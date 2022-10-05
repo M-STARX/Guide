@@ -30,3 +30,9 @@ Table of Contents
 
    spi
    gpio
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Version Control
+
+   git

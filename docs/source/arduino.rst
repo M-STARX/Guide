@@ -8,10 +8,11 @@ Below is the pinout on the right side of an arduino. As mentioned in the SPI sec
 
 You do not need to memorize this diagram!! 
 
-.. _arduino_digital:
+.. _arduino:
 
 .. image:: assets/arduino_uno_digital_pinout.png
-   :width: 400 
+   :width: 400
+   :align: center
 
 Bellow is the pinout on the left side of an arduino
 
@@ -21,13 +22,14 @@ You do not need to memorize this diagram either!!
 
 .. image:: assets/arduino_uno_analog_pinout.png
    :width: 400
+   :align: center
 
 .. _installation:
 
 Installation
 ------------
 
-Follow the following instruction to install Arduino to your laptop / PC
+Follow the following instruction to install Arduino on your laptop / PC
 
 .. tabs::
 
@@ -98,19 +100,3 @@ The answers tab is provided to so that you can see a working version of the to-d
          void loop(){
 
          }
-
-
-This is just a test to checkout this code
-
-.. raw:: HTML
-   
-   <details>
-   <summary><a>big code</a></summary>
-
-.. code-block:: Bash
-   
-   lots_of_code = "this text block"
-
-.. raw:: HTML
-   
-   </details>
