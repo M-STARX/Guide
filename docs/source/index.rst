@@ -19,30 +19,32 @@ The following form can be used to give any team member a shoutout.
 **Kudos Form:** `Link 2 <https://forms.gle/nQLwuJGZGDoFyaHG8>`_
 
 
-Table of Contents
------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :hidden:
    :caption: Trainings
 
    motorcontroller-challenge
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :hidden:
    :caption: Microcontrollers
 
    arduino
    raspberry-pi
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :hidden:
    :caption: Interfaces and Protocols
 
    spi
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :hidden:
    :caption: Version Control
 
    git
