@@ -19,6 +19,8 @@ Follow the following instruction to install Git on your latptop / PC
 
             $ sudo apt install git -y
 
+Usage
+-----
 
 .. code-block:: Bash
    

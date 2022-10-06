@@ -1,14 +1,6 @@
 Motor Controller Challenge
 ==========================
 
-Table of Content
-----------------
-
-.. toctree::
-   :caption:
-
-   nameeeeeeeeee
-
 Overview
 --------
 
@@ -37,11 +29,9 @@ The base electrical components are the following:
       - LiPo battery
       - Power supply (safer since it has internal current limits)
    * Fuse
-      - **YOU WILL NEED TO FIGURE THIS OUT**
    * Microcontroller
       - Arduino
    * Motor Driver
-      - **YOU WILL NEED TO FIGURE THIS OUT**
    * Motor + Encoder
       - Pololu 25d HP12 gear motor and its encoder
 
@@ -51,17 +41,21 @@ Electrical
 Objective: Familiarize yourself with reading datasheets and basic wiring.
 
 **I. Find the motor driver**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 This is the list of materials you will need:
    * Arduino R3 Uno
    * Breadboard
    * Jumper Wires
    * Pololu 12V HP Motor
-   * Motor Driver
+   * Motor Driver **(you need to figure this out)**
    * Power Supply
 
 We have included datasheets in this folder for various motor drivers and the Pololu Motor. Our LEXO uses a 24V LiPo battery. We won’t be using the 24V battery to power our system for testing purposes, but for the sake of this part let’s pretend we are. Using this information, you should determine which motor driver is needed based on the voltage of the battery and current of the motor.
 
 **II. Safety**
+~~~~~~~~~~~~~~
+
 When dealing with electrical components it is always important to practice safety. If you are unsure of something, ask **questions!** This is not an exam.
 
 DO NOT
@@ -74,9 +68,13 @@ DO
    - Double check connections
 
 **III. Testing Motor**
+~~~~~~~~~~~~~~~~~~~~~~
+
 Now we will test the motor just to make sure that it is operational. Power your Arduino with a laptop or PC, and connect the motor GND (black) to an Arduino GND pin using a jumper wire. Then connect the motor power (red) to the Arduino 5V. Does the motor spin? If yes we can continue to the next part.
 
 **IV. Wiring**
+~~~~~~~~~~~~~~
+
 .. image:: assets/arduino_pinout.png
    :width: 400
    :align: center
@@ -90,6 +88,8 @@ The motor drive should have three outputs labeled GND, PWM, and DIR. Connect GND
 Lastly connect a thick GND wire to the motor driver VB- and a power wire to VB+.
 
 **V. Testing Circuit**
+~~~~~~~~~~~~~~~~~~~~~~
+
 **Have someone double check all the connections before connecting the VB- and VB+ to the power supply!**
 
 Once everything looks good, plug in the power supply and turn it on to make sure that it is 12V. Power it off and connect the VB- and VB+ wires to GND and power on the power supply with the alligator clips. Turn on the power supply.
@@ -102,8 +102,49 @@ Programming
 This part of the training will familiarize you with the basics of PID controllers, rotary encoders and arduino
 
 **I. Learn Encoders**
+~~~~~~~~~~~~~~~~~~~~~
+
 A rotary encoder is a type of sensor that alternates between high and low voltage (example 5V and 0V). If you check the motor data sheet, you will see there are two encoders. Each encoder will alternate between high and low when you spin the motor. The direction that the motor spins can be determined by which encoder switches voltage first. `Here <https://www.youtube.com/watch?v=CpwGXZX-5Ug.>`_ is a useful video that explains encoders in simple terms
 
 
+.. image:: assets/encoder.png
+   :width: 400
+   :align: center
 
+**II. Testing Encoder**
+~~~~~~~~~~~~~~~~~~~~~~~
 
+Let’s test if the rotary encoder is working using the :download:`TestEncoder <./code/TestEncoder.ino>` file. Download the program and open it in Arduino. 
+
+Make sure to define ENCA and ENCB with whatever digital pins you connected them to (ie: #define ENCA 4). Once that’s done, verify and upload the program then open the serial monitor (Tools > Serial Monitor). Rotate the encoder left and right to see if the two values change, if they do then the encoder should be working. Another test you can try is to use the serial plotter instead of the serial monitor to see the graphs of the encoders.
+
+**III. Testing Position Control**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Next we will test if we can record position using the encoder. Download the :download:`TestPosition <./code/TestPosition.ino>` and open it in Arduino. Repeat the process for defining ENCA and ENCB. Verify and upload the program then run the serial monitor again. When you spin the encoder the position should increase or decrease depending on the direction it’s turned. If this happens then we know we’re able to read the position correctly.
+
+**IV. Learning PID**
+~~~~~~~~~~~~~~~~~~~~
+
+A common way to control motors is by using a PID controller. In simple terms, a PID controller is a looping system that tries to achieve some set value by the user. For example, if you are in a car and have cruise control set to 60mph, but you start going down or uphill. A PID controller is used to account for those differences to make sure the car keeps the set target of 60mph. `Here <https://www.youtube.com/watch?v=UR0hOmjaHp0>`_ is a brief video to better explain the topic and math.
+
+.. image:: assets/pid.png
+   :width: 400
+   :align: center
+
+PID controllers are a standard control algorithm in multiple industries. We will be using a PID controller in the next section to control the motor more precisely beyond just spinning forward and backward. 
+
+**V. Writing PID Controller**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Download the :download:`SetMotorTest <./code/SetMotorTest.ino>` and open it in Arduino. You will need to define the pins you used for ENCA, ENCB, PWM, and DIR. Make sure you have PWM connected to a digital pin that is marked with a "~". Uncomment and write the code to produce the proportional, integral, derivative, and control signal. 
+
+**VI. Testing PID Controller**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Lines 30-32 have the PID constants that you will need to adjust to hit the target on line 26. Try adjusting the PID constants until you are able to hit the target without overshoot or oscillation. You will need to connect the power supply to the motor GND and power and VB+ and VB- again for this step and the next step.
+
+**VII. Calibrating PID Controller**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once you are able to hit the constant target, you should try a target that changes over time. Comment out line 26 and uncomment line 27. Repeat the steps you took in part V to make sure you can match the sinusoid as closely as possible without oscillation or overshoot. After this step you will have successfully controlled a motor. **Congratulations!**
