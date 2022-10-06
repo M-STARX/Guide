@@ -1,4 +1,4 @@
-GIT
+Git
 ===
 
 Git is a widely used tool for version control.

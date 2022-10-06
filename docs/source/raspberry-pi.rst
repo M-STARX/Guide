@@ -1,6 +1,16 @@
 Raspberry Pi
 ============
 
+We use Raspberry Pi for our main microcontroller on the final products as it has more computing power. 
+
+Below is the pinout of the Raspbery Pi 4.
+
+.. _raspberrypiPinout:
+
+.. image:: assets/raspberry_pi_pinout.png
+   :width: 400
+   :align: center
+
 .. _flashing:
 
 OS Flashing
@@ -33,8 +43,8 @@ a micro SD card. If you do not have a micro SD card reader then use an adapter.
 
          .. code-block:: Bash
 
-            cd ~/Downloads/
-            sudo apt install ./imager_<version>_amd64.deb
+            $ cd ~/Downloads/
+            $ sudo apt install ./imager_<version>_amd64.deb
 
    
 .. _installation:
@@ -93,7 +103,7 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
                
          .. code-block:: Bash
    
-            unzip starx_ubuntu.img.zip
+            $ unzip starx_ubuntu.img.zip
 
       #. Flash custom starx ubuntu image
 
@@ -105,19 +115,19 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
          .. code-block:: Bash
 
-            sudo apt install openssh-server
+            $ sudo apt install openssh-server
 
       #. The following commands checks the status of the ssh service
 
          .. code-block:: Bash
 
-            sudo systemctl status ssh
+            $ sudo systemctl status ssh
 
       #. Ubuntu uses ufw to control firewall permission, we must allow ssh connections
 
          .. code-block:: Bash
 
-            sudo ufw allow ssh
+            $ sudo ufw allow ssh
 
       #. Connect to starx wifi so that it creates the wifi profile and automatically connects
 
@@ -130,8 +140,8 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
 .. code-block:: Bash
 
-   sudo apt install net-tools
-   sudo apt install nmap
+   $ sudo apt install net-tools
+   $ sudo apt install nmap
 
 We wil use two commands to discover the raspberry pi's IP as it it dynamically assigned
 
@@ -139,7 +149,7 @@ The following will print the gateway's IP address
 
 .. code-block:: Bash
 
-   arp -a
+   $ arp -a
 
    Example Output: 192.168.20.53
 
@@ -147,7 +157,7 @@ We will use this IP to do a wifi scan, this will find every device connected to 
 
 .. code-block:: Bash
 
-   nmap -sP <gateway's ip (first 3 values)>.1/24
+   $ nmap -sP <gateway's ip (first 3 values)>.1/24
 
    Example Input: nmap -sP 192.168.20.1/24
 
@@ -157,5 +167,5 @@ Use the raspberry pi IP to ssh into the pi.
 
 .. code-block:: Bash
 
-   ssh starx@raspi-IP
+   $ ssh starx@raspi-IP
 

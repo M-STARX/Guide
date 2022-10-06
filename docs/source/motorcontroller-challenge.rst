@@ -1,5 +1,7 @@
-Arduino
-=======
+Motor Controller Challenge
+==========================
+
+CURRENTLY UNDER CONSTRUCTIONS!!
 
 We use Arduino as our starting point to learn to use new components given Arduino's 
 simplicity and easy use. 
