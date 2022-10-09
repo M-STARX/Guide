@@ -9,7 +9,6 @@ You can also find our exoskeleton in action
 
 Forms
 -----
-
 The training feedback form is to see the changes we can make to improve the effectiveness of the motor control challenge and is completely anonymous.
 
 **Training Feedback Form:** `Link 1 <https://forms.gle/J4kmU3ePJwWceReA7>`_
@@ -18,7 +17,9 @@ The following form can be used to give any team member a shoutout.
 
 **Kudos Form:** `Link 2 <https://forms.gle/nQLwuJGZGDoFyaHG8>`_
 
+Reimbursements for any purchases made for STARX can be submitted here!
 
+**Reimbursement Form:** `Link 3 <https://forms.gle/ZsbC3RZs8KK7Jvth7`_
 
 .. toctree::
    :maxdepth: 2
