@@ -1,5 +1,5 @@
 Welcome to STARX's documentation!
-===================================
+https://forms.gle/ZsbC3RZs8KK7Jvth7===================================
 
 **STARX** (STrength Augmenting Robotic eXoskeleton) is a student-run engineering design 
 team at the Univeristy of Michigan focused on making practical powered exoskeletons.
@@ -19,7 +19,7 @@ The following form can be used to give any team member a shoutout.
 
 Reimbursements for any purchases made for STARX can be submitted here!
 
-**Reimbursement Form:** `Link 3 <https://forms.gle/ZsbC3RZs8KK7Jvth7`_
+**Reimbursement Form:** `Link 3 <https://forms.gle/ZsbC3RZs8KK7Jvth7>`_
 
 .. toctree::
    :maxdepth: 2
