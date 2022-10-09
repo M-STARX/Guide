@@ -8,7 +8,7 @@ Below is the pinout of the Raspbery Pi 4.
 .. _raspberrypiPinout:
 
 .. image:: assets/raspberry_pi_pinout.png
-   :width: 400
+   :width: 500
    :align: center
 
 .. _flashing:
@@ -37,7 +37,7 @@ a micro SD card. If you do not have a micro SD card reader then use an adapter.
 
          Go to the following `link <https://www.raspberrypi.com/software/>`_
 
-      # Run Installer
+      #. Run Installer
 
          Run the following inside of the terminal
 
@@ -52,18 +52,23 @@ a micro SD card. If you do not have a micro SD card reader then use an adapter.
 Installing Tools
 ----------------
 
-At STARX we use use a variety of tools this inclues ROS, odrive, SPI, GPIO, Git, and more
-Use the following lines and follow the installation instructions for the tool that you will be using so 
-that the raspberry pi is ready to be used to test and work on anything related to STARX.
+At STARX we use use a variety of tools this inclues ROS, odrive, SPI, GPIO, Git, and more. Use the following lines and follow the installation instructions for the tool that you will be using so that the raspberry pi is ready to be used to test and work on anything related to STARX.
 
 .. _headless:
 
 Headless
 --------
 
+A headless raspberry requires no monitor to make changes, instead we remotely connect to it and make changes using a laptop. This is important during competition as we do not have the space or time to setup an environment for a raspberry pi.
+
 This requires 3 different devices: hotspot, raspberry pi, and laptop
 
-**Hotspot**
+.. image:: assets/headless.png
+   :width: 500
+   :align: center
+
+Hotspot
+~~~~~~~
 
 .. tabs::
 
@@ -89,7 +94,8 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
 
       #. Enable hotspot
 
-**Raspberry Pi**
+Raspberry Pi
+~~~~~~~~~~~~
 
 .. tabs::
 
@@ -132,20 +138,21 @@ This requires 3 different devices: hotspot, raspberry pi, and laptop
       #. Connect to starx wifi so that it creates the wifi profile and automatically connects
 
 
-**Latop**
+Laptop
+~~~~~~
 
 .. note::
 
    The following will work for both Ubuntu and VM Ubuntu. VM Ubuntu MUST have the Network Adapter set to "Bridged Adapter"
+
+Install the following tools to find the raspberr pi's IP address.
 
 .. code-block:: Bash
 
    $ sudo apt install net-tools
    $ sudo apt install nmap
 
-We wil use two commands to discover the raspberry pi's IP as it it dynamically assigned
-
-The following will print the gateway's IP address
+We wil use two commands to discover the raspberry pi's IP as it it dynamically assigned. The following will print the gateway's IP address.
 
 .. code-block:: Bash
 

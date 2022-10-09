@@ -36,6 +36,7 @@ SPI Modes
 Some devices will have pins that are specifically for SPI communication so make sure to look up the pinout of the device that you are using (arduino, raspberry pi, etc).
 
 Arduino Pinout: :ref:`arduinoPinout`
+
 Raspberry Pi Pinout: :ref:`raspberrypiPinout`
 
 

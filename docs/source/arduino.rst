@@ -12,14 +12,19 @@ Below is the pinout on the right and left side of an arduino. As mentioned in th
    :width: 400
    :align: center
 
-Right Side / Digital Side
+.. div:: sd-text-center
+    
+   Right Side / Digital Side
 
 .. image:: assets/arduino_uno_analog_pinout.png
    :width: 400
    :align: center
 
-Left Side / Analog Side
-You do not need to memorize this diagram!
+.. div:: sd-text-center
+
+   Left Side / Analog Side
+
+You do not need to memorize these diagram!
 
 
 .. _installation:

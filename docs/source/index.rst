@@ -1,7 +1,7 @@
 Welcome to STARX's documentation!
 ===================================
 
-**STARX** (STrength Augmenting eXoskeleton) is a student-run engineering design 
+**STARX** (STrength Augmenting Robotic eXoskeleton) is a student-run engineering design 
 team at the Univeristy of Michigan focused on making practical powered exoskeletons.
 `STARX's Website' <https://starx.engin.umich.edu/>`_. 
 You can also find our exoskeleton in action 

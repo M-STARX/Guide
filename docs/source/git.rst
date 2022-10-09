@@ -3,6 +3,10 @@ Git
 
 Git is a widely used tool for version control.
 
+.. image:: assets/commit_meme.png
+   :width: 500
+   :align: center
+
 Installation
 ------------
 
@@ -22,54 +26,75 @@ Follow the following instruction to install Git on your latptop / PC
 Usage
 -----
 
+The followings are the most common git commands.
+
+Clone
+~~~~~
+
+This command creates a local copy of the repository, you will usually only run this commnad once.
+
 .. code-block:: Bash
    
-   # this creates a copy of the repository
    $ git clone <repo_link>
-   # this highlights files that have been added, deleted, or modified
+      
+   Example: $ git clone https://gitlab.eecs.umich.edu/starx/guide.git
+
+Status
+~~~~~~
+
+This command will output the current branch and highlight the files that have been added, deleted, or modified.
+
+.. code-block:: Bash
+   
    $ git status
-   # this will add file into the stage phase meaning that they are ready to be commited
+
+Pull
+~~~~
+
+This command updates the local repository with the latest version of the online respository.
+
+.. code-block:: Bash
+   
+   $ git pull
+
+Add
+~~~
+
+This command allows the user to add files into the stage phase (ready to be commited).
+
+.. code-block:: Bash
+   
    $ git add
-   # this commits the files but only locally
-   # a commit is like a saving a file in a game
+   
+Commit
+~~~~~~
+
+This command create a commit locally with the specified message otherwise it uses an automated message, think of it as a screenshot of the current state of the respository.
+
+.. code-block:: Bash
+   
    $ git commit -m "message goes in here keep the quotations"
-   # this will push all your commits to the repo, this commant will request username and auth token
+   
+Push
+~~~~
+
+This command pushes all the local commit to the online respository, it will request your username and password (or auth token).
+
+.. code-block:: Bash
+   
    $ git push
 
 
-This is just a test to checkout this code
-
-.. raw:: HTML
+.. .. raw:: HTML
 
    <details>
    <summary><a>big code</a></summary>
 
-.. code-block:: Bash
+.. .. code-block:: Bash
     
    lots_of_code = "this text block"
 
-.. raw:: HTML
+.. .. raw:: HTML
 
    </details>
 
-
-Removed <details> 
-
-.. raw:: HTML
-
-   <summary><a>big code</a></summary>
-
-.. code-block:: Bash
-    
-   lots_of_code = "this text block"
-
-Regular block of code
-
-.. code-block:: Bash
-    
-   lots_of_code = "this text block"
-   $ this is more test
-   $ git clone
-   $ git commit
-   $ git add
-   $ git push
