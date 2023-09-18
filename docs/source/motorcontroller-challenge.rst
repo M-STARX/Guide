@@ -37,6 +37,7 @@ This is the list of materials you will need:
 We have included datasheets in this `folder <https://drive.google.com/drive/folders/1xZB-TVaK-d6UKZDr4bEafMfK2vxhbZi5?usp=sharing>`_ for various motor drivers and the Pololu Motor. Our LEXO uses a 24V LiPo battery. We won’t be using the 24V battery to power our system for testing purposes, but for the sake of this part let’s pretend we are. Using this information, you should determine which motor driver is needed based on the voltage of the battery and current of the motor.
 
 .. dropdown:: Hint 1
+   
    Test content
 
 **Safety**
