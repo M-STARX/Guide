@@ -6,4 +6,4 @@ build:
     python: "3.11"
   jobs:
     pre_create_environment:
-      - pip install sphinx-tabs
+      - pip3 install sphinx-tabs
