@@ -5,8 +5,8 @@
 // attachInterrupt only works on digital pin 2 or 3
 
 // EXAMPLE: #define ENCA 10
-#define ENCA // YELLOW
-#define ENCB // WHITE
+#define ENCA 2 // YELLOW
+#define ENCB 3 // WHITE
 #define PWM
 #define DIR
 

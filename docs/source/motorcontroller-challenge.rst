@@ -12,36 +12,16 @@ In this challenge, we will create a position controlled motor controller. We wil
    :width: 500
    :align: center
 
-The diagram below shows a high level diagram of what you will be doing in this training. As you can see by the diagram this training includes both electrical and programming components.
+This training includes both electrical and programming components.
 
 .. note::
 
    Programmers: Knowing the electrical components and wiring diagrams are beneficial when it comes to debugging
 
-.. image:: assets/high_level_diagram.png
-   :width: 500
-   :align: center
-
-This diagram shows the 'bare-bones' components that you will be using.  You could include more components if you want/need, but a simple position controller can be made with the components below:
-
-The base electrical components are the following:
-   * Power Source
-      - LiPo battery
-      - Power supply (safer since it has internal current limits)
-   * Fuse
-   * Microcontroller
-      - Arduino
-   * Motor Driver
-   * Motor + Encoder
-      - Pololu 25d HP12 gear motor and its encoder
-
 Electrical
 ----------
 
 Objective: Familiarize yourself with reading datasheets and basic wiring.
-
-**Find the motor driver**
-~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is the list of materials you will need:
    * Arduino R3 Uno
@@ -51,7 +31,13 @@ This is the list of materials you will need:
    * Motor Driver **(you need to figure this out)**
    * Power Supply
 
-We have included datasheets in this folder for various motor drivers and the Pololu Motor. Our LEXO uses a 24V LiPo battery. We won’t be using the 24V battery to power our system for testing purposes, but for the sake of this part let’s pretend we are. Using this information, you should determine which motor driver is needed based on the voltage of the battery and current of the motor.
+**1. Find the motor driver**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We have included datasheets in this `folder <https://drive.google.com/drive/folders/1xZB-TVaK-d6UKZDr4bEafMfK2vxhbZi5?usp=sharing>`_ for various motor drivers and the Pololu Motor. Our LEXO uses a 24V LiPo battery. We won’t be using the 24V battery to power our system for testing purposes, but for the sake of this part let’s pretend we are. Using this information, you should determine which motor driver is needed based on the voltage of the battery and current of the motor.
+
+.. dropdown:: Hint 1
+   Test content
 
 **Safety**
 ~~~~~~~~~~
@@ -99,12 +85,12 @@ There are two buttons on the motor driver labeled MA and MB. Press one at a time
 Programming
 -----------
 
-This part of the training will familiarize you with the basics of PID controllers, rotary encoders and arduino
+This part of the training will familiarize you with the basics of PID controllers, rotary encoders and Arduino.
 
 **Learn Encoders**
 ~~~~~~~~~~~~~~~~~~
 
-A rotary encoder is a type of sensor that alternates between high and low voltage (example 5V and 0V). If you check the motor data sheet, you will see there are two encoders. Each encoder will alternate between high and low when you spin the motor. The direction that the motor spins can be determined by which encoder switches voltage first. `Here <https://www.youtube.com/watch?v=CpwGXZX-5Ug.>`_ is a useful video that explains encoders in simple terms
+A rotary encoder is a type of sensor that alternates between high and low voltage (example 5V and 0V). If you check the motor data sheet, you will see there are two encoders. Each encoder will alternate between high and low when you spin the motor. The direction that the motor spins can be determined by which encoder switches voltage first. `Here <https://www.youtube.com/watch?v=CpwGXZX-5Ug.>`_ is a useful video that explains encoders in simple terms.
 
 
 .. image:: assets/encoder.png
@@ -116,7 +102,7 @@ A rotary encoder is a type of sensor that alternates between high and low voltag
 
 Let’s test if the rotary encoder is working using the :download:`TestEncoder <./code/TestEncoder.ino>` file. Download the program and open it in Arduino. 
 
-Make sure to define ENCA and ENCB with whatever digital pins you connected them to (ie: #define ENCA 4). Once that’s done, verify and upload the program then open the serial monitor (Tools > Serial Monitor). Rotate the encoder left and right to see if the two values change, if they do then the encoder should be working. Another test you can try is to use the serial plotter instead of the serial monitor to see the graphs of the encoders.
+Make sure to define ENCA as pin 2 and ENCB as pin 3. Once that’s done, verify and upload the program then open the serial monitor (Tools > Serial Monitor). Rotate the encoder left and right to see if the two values change, if they do then the encoder should be working. Another test you can try is to use the serial plotter instead of the serial monitor to see the graphs of the encoders.
 
 **Testing Position Control**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

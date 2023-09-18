@@ -145,7 +145,7 @@ Laptop
 
    The following will work for both Ubuntu and VM Ubuntu. VM Ubuntu MUST have the Network Adapter set to "Bridged Adapter"
 
-Install the following tools to find the raspberr pi's IP address.
+Install the following tools to find the raspberry pi's IP address.
 
 .. code-block:: Bash
 
@@ -160,7 +160,7 @@ We wil use two commands to discover the raspberry pi's IP as it it dynamically a
 
    Example Output: 192.168.20.53
 
-We will use this IP to do a wifi scan, this will find every device connected to this wifi
+We will use this IP to do a wifi scan, this will find every device connected to this WIFI.
 
 .. code-block:: Bash
 

@@ -1,8 +1,8 @@
 // Fill in the pins for both ENCA and ENCB
 
 // EXAMPLE: #define ENCA 10
-#define ENCA
-#define ENCB
+#define ENCA 2
+#define ENCB 3
 
 // Everything inside of setup() will only execute once
 void setup() {

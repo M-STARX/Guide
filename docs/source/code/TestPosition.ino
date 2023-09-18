@@ -3,8 +3,8 @@
 // attachInterrupt only works on digital pin 2 or 3
 
 // EXAMPLE: #define ENCA 10
-#define ENCA
-#define ENCB
+#define ENCA 2
+#define ENCB 3
 
 int posi = 0;
 
