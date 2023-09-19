@@ -15,7 +15,6 @@ In this challenge, we will create a position controlled motor controller. We wil
 This training includes both electrical and programming components.
 
 .. note::
-
    Programmers: Knowing the electrical components and wiring diagrams are beneficial when it comes to debugging
 
 Electrical
@@ -31,19 +30,13 @@ This is the list of materials you will need:
    * Motor Driver **(you need to figure this out)**
    * Power Supply
 
-**1. Find the motor driver**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We have included datasheets in this `folder <https://drive.google.com/drive/folders/1xZB-TVaK-d6UKZDr4bEafMfK2vxhbZi5?usp=sharing>`_ for various motor drivers and the Pololu Motor. Our LEXO uses a 24V LiPo battery. We won’t be using the 24V battery to power our system for testing purposes, but for the sake of this part let’s pretend we are. Using this information, you should determine which motor driver is needed based on the voltage of the battery and current of the motor.
-
-.. dropdown:: Hint 1
-   
-   Test content
-
 **Safety**
 ~~~~~~~~~~
 
-When dealing with electrical components it is always important to practice safety. If you are unsure of something, ask **questions!** This is not an exam.
+When dealing with electrical components it is always important to practice safety. 
+
+.. note::
+   If you are unsure of something, ask **questions!** This is not an exam.
 
 DO NOT
    - Connect Ground and Voltage wires
@@ -53,6 +46,20 @@ DO NOT
 DO
    - Look at the datasheets
    - Double check connections
+
+**Find the motor driver**
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We have included datasheets in this `folder <https://drive.google.com/drive/folders/1xZB-TVaK-d6UKZDr4bEafMfK2vxhbZi5?usp=sharing>`_ for various motor drivers and the Pololu Motor. Our LEXO uses a 24V LiPo battery. We won’t be using the 24V battery to power our system for testing purposes, but for the sake of this part let’s pretend we are.
+
+.. note::
+   An important part of reading a datasheet is ingoring uncessary information/diagrams, identify and focus on the important factors.
+
+.. dropdown:: Hint 1: Motor
+   Figure out the motor voltage and current.  
+
+.. dropdown:: Hint 2: Battery
+   Figure out the battery voltage and current.  
 
 **Testing Motor**
 ~~~~~~~~~~~~~~~~~
