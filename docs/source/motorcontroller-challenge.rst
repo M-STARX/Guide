@@ -56,9 +56,11 @@ We have included datasheets in this `folder <https://drive.google.com/drive/fold
    An important part of reading a datasheet is ingoring uncessary information/diagrams, identify and focus on the important factors.
 
 .. dropdown:: Hint 1: Motor
+
    Figure out the motor voltage and current.  
 
 .. dropdown:: Hint 2: Battery
+   
    Figure out the battery voltage and current.  
 
 **Testing Motor**
