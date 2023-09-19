@@ -60,7 +60,7 @@ We have included datasheets in this `folder <https://drive.google.com/drive/fold
    Figure out the motor voltage and current.  
 
 .. dropdown:: Hint 2: Battery
-   
+
    Figure out the battery voltage and current.  
 
 **Testing Motor**
@@ -75,7 +75,25 @@ Now we will test the motor just to make sure that it is operational. Power your 
    :width: 500
    :align: center
 
-Now let’s begin to wire all the components together. There is an included Arduino pinout above. Disconnect the motor GND and motor power from the arduino. Route a wire from the negative terminal on the breadboard to the GND on the arduino. Do the same for the positive terminal and 5V. We will route most GND and Voltage connections to these terminals.
+Now let’s begin to wire all the components together. There is an included Arduino pinout above. 
+
+.. |check| raw:: html
+
+   <input checked=""  type="checkbox">
+
+.. |uncheck| raw:: html
+
+   <input type="checkbox">
+
+|uncheck| Disconnect GND and V5 from the motor
+
+|uncheck| Connect GND on Arduin to - on Breadboard
+
+|uncheck| Connect V5 on Arduin to + on Breadboard
+
+|uncheck| random
+
+Disconnect the motor GND and motor power from the arduino. Route a wire from the negative terminal on the breadboard to the GND on the arduino. Do the same for the positive terminal and 5V. We will route most GND and Voltage connections to these terminals.
 
 Connect the motor GND and power to the motor driver MA and MB respectively. Connect the motor Encoder A and Encoder B wires to two digital pins on the arduino. Wire the Encoder Vcc to the 5V terminal.
 
