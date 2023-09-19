@@ -18,7 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_tabs.tabs',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
     'sphinx_design'
 ]
 
