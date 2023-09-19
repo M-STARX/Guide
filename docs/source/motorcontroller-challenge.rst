@@ -90,7 +90,6 @@ Now let’s begin to wire all the components together. There is an included Ardu
 |uncheck| Connect GND on Arduin to - on Breadboard
 
 |uncheck| Connect V5 on Arduin to + on Breadboard
-
 |uncheck| random
 
 Disconnect the motor GND and motor power from the arduino. Route a wire from the negative terminal on the breadboard to the GND on the arduino. Do the same for the positive terminal and 5V. We will route most GND and Voltage connections to these terminals.
