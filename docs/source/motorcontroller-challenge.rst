@@ -97,7 +97,7 @@ Now let’s begin to wire all the components together. There is an included Ardu
 
 |uncheck| Connect motor Encoder VCC to the + on the Breadboard
 
-|uncheck| Connect motor driver (GND, PWM, and DIR) to Arduino (GND, 3, and 2)
+|uncheck| Connect motor driver (GND, PWM, and DIR) to Arduino (GND, 9, and 10)
 
 |uncheck| Connect thick wires to motor driver VB- (black) and VB+ (red). This will later connect to the power supply.
 
