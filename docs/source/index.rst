@@ -45,3 +45,10 @@ Reimbursements for any purchases made for STARX can be submitted here!
    :caption: Version Control
 
    git
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Documentation
+
+   guide
